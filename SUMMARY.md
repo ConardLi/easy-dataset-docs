@@ -12,14 +12,11 @@
 * [文献](ji-chu-gong-neng/publish-your-docs/README.md)
   * [文献处理](ji-chu-gong-neng/publish-your-docs/wen-xian-chu-li.md)
 
-## Basics
+## 进阶使用
 
-* [Editor](basics/editor.md)
-* [Markdown](basics/markdown.md)
-* [Images & media](basics/images-and-media.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [OpenAPI](basics/openapi.md)
-* [Integrations](basics/integrations.md)
+* [自定义分块](jin-jie-shi-yong/editor.md)
+* [自定义提示词](jin-jie-shi-yong/markdown.md)
+* [蒸馏数据集](jin-jie-shi-yong/images-and-media.md)
 
 ## Group 1
 
