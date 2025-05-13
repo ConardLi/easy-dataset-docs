@@ -4,20 +4,10 @@ icon: futbol
 
 # 项目
 
-<figure><img src="https://gitbookio.github.io/onboarding-template-images/quickstart-hero.png" alt=""><figcaption></figcaption></figure>
+项目是 `Easy DataSet` 中的一个最小工作单元，一个项目下有一份独立的配置（包括数据集生成任务配置、模型配置等等），可以处理一批文献并且管理基于这批文献生成的所有问题和数据集。
 
-Beautiful documentation starts with the content you create — and GitBook makes it easy to get started with any pre-existing content.
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-Want to learn about writing content from scratch? Head to the [Basics](../../basics/editor.md) section to learn more.
-{% endhint %}
+创建新项目，只需要输入项目名称和描述，可复用其他项目的模型配置。
 
-### Import
-
-GitBook supports importing content from many popular writing tools and formats. If your content already exists, you can upload a file or group of files to be imported.
-
-<div data-full-width="false"><figure><img src="https://gitbookio.github.io/onboarding-template-images/quickstart-import.png" alt=""><figcaption></figcaption></figure></div>
-
-### Sync a repository
-
-GitBook also allows you to set up a bi-directional sync with an existing repository on GitHub or GitLab. Setting up Git Sync allows you and your team to write content in GitBook or in code, and never have to worry about your content becoming out of sync.
+> 名称和描述只用于记录和查看，不会影响后续的数据集生成任务。
