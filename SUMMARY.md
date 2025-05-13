@@ -8,6 +8,7 @@
 * [项目](ji-chu-gong-neng/quickstart/README.md)
   * [任务配置](ji-chu-gong-neng/quickstart/ren-wu-pei-zhi.md)
   * [模型配置](ji-chu-gong-neng/quickstart/mo-xing-pei-zhi.md)
+  * [模型测试](ji-chu-gong-neng/quickstart/mo-xing-ce-shi.md)
 * [文献](ji-chu-gong-neng/publish-your-docs/README.md)
   * [文献处理](ji-chu-gong-neng/publish-your-docs/wen-xian-chu-li.md)
 
