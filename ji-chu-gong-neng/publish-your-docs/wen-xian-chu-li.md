@@ -70,7 +70,7 @@ icon: book
 
 <figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-关于文本分块的原理，以及想自定义分块规则以适应不同的文献结构，可查看：《[自定义分块](../../jin-jie-shi-yong/editor.md)》 章节。
+关于文本分块的原理，以及想自定义分块规则以适应不同的文献结构，可查看：《[自定义分块](../../basics/editor.md)》 章节。
 
 
 

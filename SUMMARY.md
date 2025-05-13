@@ -11,12 +11,18 @@
   * [模型测试](ji-chu-gong-neng/quickstart/mo-xing-ce-shi.md)
 * [文献](ji-chu-gong-neng/publish-your-docs/README.md)
   * [文献处理](ji-chu-gong-neng/publish-your-docs/wen-xian-chu-li.md)
+  * [领域标签](ji-chu-gong-neng/publish-your-docs/ling-yu-biao-qian.md)
+
+***
+
+* [问题](wen-ti/README.md)
+  * [问题生成](wen-ti/wen-ti-sheng-cheng.md)
 
 ## 进阶使用
 
-* [自定义分块](jin-jie-shi-yong/editor.md)
-* [自定义提示词](jin-jie-shi-yong/markdown.md)
-* [蒸馏数据集](jin-jie-shi-yong/images-and-media.md)
+* [自定义分块](basics/editor.md)
+* [自定义提示词](basics/markdown.md)
+* [蒸馏数据集](basics/images-and-media.md)
 
 ## Group 1
 
