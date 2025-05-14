@@ -10,7 +10,7 @@ icon: diagram-next
 
 ### 文本分割设置
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. 分割策略（Split Strategy）
 
@@ -32,7 +32,7 @@ icon: diagram-next
 
 ### 问题生成设置
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. 问题生成长度（Question Generation Length）
 
@@ -55,7 +55,7 @@ icon: diagram-next
 
 ### PDF 转换配置
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. **MinerU Token 配置**
 
@@ -69,7 +69,7 @@ icon: diagram-next
 
 ### 数据集上传设置
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Hugging Face Token
 
