@@ -25,3 +25,18 @@ icon: hashtag
 如果你觉得 AI 生成的领域树，有哪些不准确或者不完善的地方，也可以直接手动添加或者更改和删除标签，建议把领域树的划分确认的更准确后，再去生成问题。
 
 <figure><img src="../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### 修订标签树
+
+当删除、新增一个新的文献时，会提供三种模式：
+
+* 修改领域树：根据新增或删除的文档修改当前领域树，仅影响发生变更的部分
+* 重建领域树：基于所有文档内容生成全新的领域树
+* 保持不变：保持当前领域树结构不变，不进行任何修改保持当前领域树不变
+
+<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
