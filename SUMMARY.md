@@ -45,3 +45,4 @@
 
 * [常见问题](geng-duo/chang-jian-wen-ti.md)
 * [隐私协议](geng-duo/yin-si-xie-yi.md)
+* [联系我们](geng-duo/lian-xi-wo-men.md)
