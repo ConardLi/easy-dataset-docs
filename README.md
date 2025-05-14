@@ -75,9 +75,3 @@ Easy DataSet 以 **项目制** 为核心单元，贯穿 「文献处理-问题�
 
 * **多格式导出**：支持 Alpaca、ShareGPT 标准格式，自定义字段映射，包含领域标签与 COT 信息。
 * **数据集广场**：聚合 HuggingFace、Kaggle 等多平台数据源，支持关键字一键检索，解决 「数据从哪来」 的初始难题。
-
-***
-
-### 快速索引
-
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>安装和使用</strong></td><td>Create your first site</td><td></td><td></td><td></td><td></td><td><a href="ji-chu-gong-neng/quickstart/">quickstart</a></td></tr><tr><td><strong>Basics</strong></td><td>Learn the basics of GitBook</td><td></td><td></td><td></td><td></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>Publish your docs</strong></td><td>Share your docs online</td><td></td><td></td><td></td><td></td><td><a href="ji-chu-gong-neng/publish-your-docs/">publish-your-docs</a></td></tr></tbody></table>
