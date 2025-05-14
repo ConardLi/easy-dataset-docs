@@ -23,10 +23,12 @@
   * [数据集管理](shu-ju-ji/shu-ju-ji-guan-li.md)
   * [数据集导出](shu-ju-ji/shu-ju-ji-dao-chu.md)
   * [数据集广场](shu-ju-ji/shu-ju-ji-guang-chang.md)
+* [评估](ping-gu/README.md)
+  * [微调效果评估](ping-gu/wei-tiao-xiao-guo-ping-gu.md)
 
 ## 进阶使用
 
-* [自定义分块](basics/editor.md)
+* [文本分块策略](basics/editor.md)
 * [自定义提示词](basics/markdown.md)
 * [蒸馏数据集](basics/images-and-media.md)
 
