@@ -37,6 +37,10 @@
 * [更新日志](bo-ke/geng-xin-ri-zhi.md)
 * [社区教程](bo-ke/she-qu-jiao-cheng.md)
 
+***
+
+* [知识科普](zhi-shi-ke-pu.md)
+
 ## 更多
 
 * [常见问题](geng-duo/chang-jian-wen-ti.md)
