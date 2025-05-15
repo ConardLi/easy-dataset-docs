@@ -4,17 +4,33 @@ icon: question
 
 # 常见问题
 
+### Q：升级至 1.3.x 版本后历史数据丢失
+
+同时打开历史数据目录（**Open Data Directory（History）**）、当前数据目录（**Open Data Directory**）
+
+<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+
+将历史数据目录下的所有文件夹移动至当前数据目录：
+
+<figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+
+重启客户端，将弹出数据迁移弹框，点击开始迁移
+
+<figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+
+迁移成功后，可在新版本使用历史数据。
+
+***
+
 ### Q：如何生成英文的数据集？
 
-<img src="https://rncg5jvpme.feishu.cn/space/api/box/stream/download/asynccode/?code=ODUzZmFmYThhODVkZjM4NjUyNWYzZWMyYzM1NzlmNDFfRkRoQmROWFA2STFIZUI5dWlJaklSbmhGOHJRNUROZXVfVG9rZW46VEJzbGJvcWEwb1lNa2h4MDQzQWMwWlcybktiXzE3NDcyMjMyMDY6MTc0NzIyNjgwNl9WNA" alt="" data-size="original">
+<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 系统会根据当前用户选择的语言决定最终生成数据集的语言，目前支持中、英两种语言。当前默认语言环境为中文，如果需要生成英文数据集，需要手动切换至英文。
 
 ***
 
 ### Q：模型配置里未找到想要的模型提供商和模型？
-
-![](https://rncg5jvpme.feishu.cn/space/api/box/stream/download/asynccode/?code=N2U0NTNjZGZhYjY4YTBhZmM1ZjVjMzZmYzIwODc1YmZfTEl0ZXYyZk5aeUlMc1E0NjlxZjMzQjEwRTFGVThzNnZfVG9rZW46WGMwZ2J1ZHZSb0NjQlZ4TUhIcGMySFdZbndkXzE3NDcyMjMyMDY6MTc0NzIyNjgwNl9WNA)
 
 目前支持 **OpenAI 标准协议** 的模型接入，兼容 Ollama，系统只是内置了一些常见的模型配置，如果未找到可以自定义**模型提供商、** **模型名称、API地址、密钥** 。
 
@@ -34,7 +50,7 @@ icon: question
 
 ### Q：批量任务突然中断，在某个节点开始快速完成
 
-![](https://rncg5jvpme.feishu.cn/space/api/box/stream/download/asynccode/?code=Nzg1NzA2YzE2NGNmYzZiZjRkNjIxZjE0Y2ZkYzhiY2Vfa3N5QzBqTnR6bXJsZ0VnSkhaTTcxakl2S1oxT1JnSm5fVG9rZW46WWpibmI4eVBhbzc3WnR4MU41T2NJSEVGbmxnXzE3NDcyMjMyMDY6MTc0NzIyNjgwNl9WNA)
+<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 很有可能触发了模型的限流策略、常见于未充值的硅基流动、免费的 OpenRouter 模型，可以手动将任务配置里的并发处理数量调小，目前默认是 5 。
 
@@ -42,6 +58,6 @@ icon: question
 
 ### Q：问题、数据集未按照期望风格输出
 
-![](https://rncg5jvpme.feishu.cn/space/api/box/stream/download/asynccode/?code=MjllODY4ZTQwNDRjN2M5NzdjODNkOTc1N2YyNDc0NmJfbTlyUDhvaHM4eEZWSTZHa0tnWHA1Zm1hbUcxRWNGZmpfVG9rZW46QlBIVmJEZ01Zb2hVNGp4YVZBRGNTUE1QbkJlXzE3NDcyMjMyMDY6MTc0NzIyNjgwNl9WNA)
+<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 可以在项目配置 - 提示词配置增加自定义提示词进行主动干预。
