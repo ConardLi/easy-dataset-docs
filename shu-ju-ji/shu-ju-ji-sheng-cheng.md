@@ -8,7 +8,7 @@ icon: wand-magic-sparkles
 
 点击单个问题上的魔法棒🪄图标，为单个问题生成答案（构造数据集）：
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 问题生成答案后，将在右侧展示已经生成答案的数量（单个问题可以生成多个答案）：
 

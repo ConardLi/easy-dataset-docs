@@ -14,8 +14,8 @@ icon: billboard
 * 通过自定义问题生成提示词要求问题必须保持精简
 * 通过自定义答案生成提示词要求答案必须风趣幽默
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 最终干预后的效果：
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
