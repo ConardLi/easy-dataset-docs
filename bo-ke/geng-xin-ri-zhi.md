@@ -8,6 +8,73 @@ icon: up
 同步：[https://github.com/ConardLi/easy-dataset/releases/](https://github.com/ConardLi/easy-dataset/releases/)
 {% endhint %}
 
+### [\[1.3.4\] 2025-05-20](https://github.com/ConardLi/easy-dataset/releases/tag/1.3.4)&#x20;
+
+**🔧 修复**
+
+1. **领域树视图下问题无法展示**\
+   → 修复领域树节点展开后问题列表空白的异常，确保层级结构正常渲染。
+2. **自定义视觉模型解析失效**\
+   → 恢复自定义视觉模型对 PDF/图片的解析功能，优化模型加载逻辑。
+3. **多文件文本块排序错乱**\
+   → 解决跨文件文本块混合排序时的顺序混乱问题。
+4. **新版本升级后数据库同步失败**\
+   → 修复升级过程中本地数据库与后台数据同步异常，确保版本迭代数据完整性。
+
+***
+
+### [\[1.3.3\] 2025-5-20](https://github.com/ConardLi/easy-dataset/releases/tag/1.3.3)
+
+**🔧 修复**
+
+1. 修复文本块待生成问题筛选失效的问题
+2. 修复文本块排序错乱的问题
+3. 修复上传文档后不等待接口响应直接刷新业务的问题
+
+**⚡ 优化**
+
+1. 文本块查询时剔除包含“distill content”的无效文本块
+
+**✨ 新功能：后台异步任务**
+
+**背景**：原前端同步执行批量任务易受浏览器并发限制，导致页面卡顿。\
+**优化**：将任务迁移至后台异步处理，提升大规模数据操作效率。
+
+1. **支持的异步任务类型**
+   * **自动提取问题**：创建任务后，后台自动批量处理未生成问题的文本块，支持配置并发量。\
+
+   * **自动生成数据集**：后台自动为未生成答案的问题批量生成答案，释放前端资源。\
+
+2. **交互改进**
+   * **任务状态图标**：右上角显示实时进度，点击查看任务详情、日志及异常处理选项。
+
+***
+
+### [\[1.3.2\] 2025-05-18](https://github.com/ConardLi/easy-dataset/releases/tag/1.3.2)
+
+**✨ 新功能**
+
+1. **新模块：蒸馏模块**
+   * **无文献蒸馏模式**：无需依赖现有文献，直接从大模型中蒸馏生成数据集 ，查看文档：[https://docs.easy-dataset.com/jin-jie-shi-yong/images-and-media](https://docs.easy-dataset.com/jin-jie-shi-yong/images-and-media)
+2. **数据集一键上传 Huggingface**
+   * 支持将数据集直接推送至 Huggingface 平台，方便模型训练与共享
+
+**⚡ 优化**
+
+1. **项目管理增强**
+   * 支持删除待升级、升级失败状态的项目
+   * 新增“打开项目文件夹”功能，快速定位目标项目路径
+2. **领域树性能优化**
+   * 问题节点改为**按需加载**，大幅提升领域树视图的查询速度
+3. **顶部导航栏样式**
+   * 优化布局和视觉设计，提升操作便捷性
+4. **数据集详情页渲染**
+   * 答案内容支持 **Markdown 格式渲染**，增强可读性
+5. **数据存储优化**
+   * 数据集存储时不再包含关联文本块原始内容，节省约大量存储空间
+
+***
+
 ### [\[1.3.1\] 2025-05-14](https://github.com/ConardLi/easy-dataset/releases/tag/1.3.1)
 
 **🔧 修复**
@@ -27,21 +94,20 @@ icon: up
    * 新增/删除文献时支持三种模式：
      * **修订模式**：仅修正新增/删除文献相关的领域树节点，最小化影响现有结构
      * **完全重建模式**：基于所有文献目录重新生成领域树（现有逻辑）
-     * **锁定模式**：固定当前领域树，新增/删除文献不触发更新\
-       [![image](https://private-user-images.githubusercontent.com/30708545/443675834-ce3b8ae9-8931-4e28-9264-9f4755bf7d47.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcyMzY0MDIsIm5iZiI6MTc0NzIzNjEwMiwicGF0aCI6Ii8zMDcwODU0NS80NDM2NzU4MzQtY2UzYjhhZTktODkzMS00ZTI4LTkyNjQtOWY0NzU1YmY3ZDQ3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTE0VDE1MjE0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTJlZTRjNmUxMTEyMmY4ZmExOTMwNWNiOGIyMDdjNTBmMTE5NjM4NzkzMGNlNGQ1Y2IzOTI1ZTI4YzZjN2ZkZjYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.BSwPfOoWwK6i9YNf3iwwj6H7aAXXoJQgM8EFvLs28d0)](https://private-user-images.githubusercontent.com/30708545/443675834-ce3b8ae9-8931-4e28-9264-9f4755bf7d47.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcyMzY0MDIsIm5iZiI6MTc0NzIzNjEwMiwicGF0aCI6Ii8zMDcwODU0NS80NDM2NzU4MzQtY2UzYjhhZTktODkzMS00ZTI4LTkyNjQtOWY0NzU1YmY3ZDQ3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTE0VDE1MjE0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTJlZTRjNmUxMTEyMmY4ZmExOTMwNWNiOGIyMDdjNTBmMTE5NjM4NzkzMGNlNGQ1Y2IzOTI1ZTI4YzZjN2ZkZjYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.BSwPfOoWwK6i9YNf3iwwj6H7aAXXoJQgM8EFvLs28d0)
+     * **锁定模式**：固定当前领域树，新增/删除文献不触发更新
 2. **多种文本分块策略**
    * **Markdown分块**：根据文档标题自动分割，保持语义完整性（适用于结构化Markdown）
    * **自定义分割符递归分块**：按优先级递归尝试多级分隔符（可配置），适合复杂文档
    * **自定义分割符固定长度分块**：按指定分隔符切分后组合为固定长度（可配置）
    * **Token分块**：基于Token数量分块（非字符数），适配模型输入要求
-   * **程序代码智能分块**：根据编程语言语法结构智能分割，避免语法断裂\
-     [![image](https://private-user-images.githubusercontent.com/30708545/443675054-fb98d30b-e929-4cb3-9cea-8fabd80da93a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcyMzY0MDIsIm5iZiI6MTc0NzIzNjEwMiwicGF0aCI6Ii8zMDcwODU0NS80NDM2NzUwNTQtZmI5OGQzMGItZTkyOS00Y2IzLTljZWEtOGZhYmQ4MGRhOTNhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTE0VDE1MjE0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWIxZDY5MWRmYjk5OWI0ZGVmZTczYmFjZjg2NDViNjJkZDRmZWFkMGZhZjcyYjI2MmU1MjA5OTM0MzY2M2ViYmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.i_SWtAKiFdSN_mg_HHPbT2qTFDUwBpPUBuDfZmNsqy0)](https://private-user-images.githubusercontent.com/30708545/443675054-fb98d30b-e929-4cb3-9cea-8fabd80da93a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcyMzY0MDIsIm5iZiI6MTc0NzIzNjEwMiwicGF0aCI6Ii8zMDcwODU0NS80NDM2NzUwNTQtZmI5OGQzMGItZTkyOS00Y2IzLTljZWEtOGZhYmQ4MGRhOTNhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTE0VDE1MjE0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWIxZDY5MWRmYjk5OWI0ZGVmZTczYmFjZjg2NDViNjJkZDRmZWFkMGZhZjcyYjI2MmU1MjA5OTM0MzY2M2ViYmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.i_SWtAKiFdSN_mg_HHPbT2qTFDUwBpPUBuDfZmNsqy0)
+   * **程序代码智能分块**：根据编程语言语法结构智能分割，避免语法断裂
 3. **可视化自定义分块**
-   * 支持通过图形界面手动调整分块边界，实时预览分块效果\
-     [![image](https://private-user-images.githubusercontent.com/30708545/443675148-efe9ef9d-8db1-489e-870f-811649e69fbb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcyMzY0MDIsIm5iZiI6MTc0NzIzNjEwMiwicGF0aCI6Ii8zMDcwODU0NS80NDM2NzUxNDgtZWZlOWVmOWQtOGRiMS00ODllLTg3MGYtODExNjQ5ZTY5ZmJiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTE0VDE1MjE0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE2NGVlZDlmMWJiM2U3ZjQ1Nzc1NWVhYmVmNjA3OTdlMjdhM2Y3NjkyN2UyYzJhZDNjYjBmNzhhMjI2YWRkZTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.h5vffql_BUnE8tO1JB3RRIAOLVNaX73av4G6sxhqT64)](https://private-user-images.githubusercontent.com/30708545/443675148-efe9ef9d-8db1-489e-870f-811649e69fbb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcyMzY0MDIsIm5iZiI6MTc0NzIzNjEwMiwicGF0aCI6Ii8zMDcwODU0NS80NDM2NzUxNDgtZWZlOWVmOWQtOGRiMS00ODllLTg3MGYtODExNjQ5ZTY5ZmJiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTE0VDE1MjE0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE2NGVlZDlmMWJiM2U3ZjQ1Nzc1NWVhYmVmNjA3OTdlMjdhM2Y3NjkyN2UyYzJhZDNjYjBmNzhhMjI2YWRkZTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.h5vffql_BUnE8tO1JB3RRIAOLVNaX73av4G6sxhqT64)
+   * 支持通过图形界面手动调整分块边界，实时预览分块效果
 4. **客户端工具增强**
    * 新增本地日志存储，可一键打开日志目录排查问题
    * 新增清除缓存功能，支持清理历史日志和数据库备份文件
+
+***
 
 ### \[1.3.0-beta.1] 2025-05-06
 
