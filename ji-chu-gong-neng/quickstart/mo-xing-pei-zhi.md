@@ -18,7 +18,7 @@ icon: gear-complex-code
 注意：不在以上列表的模型提供商也是支持配置的，模型提供商、API 接口地址、API Key、模型名称这些信息都是支持自定义输入的，只要是符合 OPEN AI 格式的 API，平台均可兼容。
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 点击**刷新模型列表**，可查看该提供商提供的所有模型（这里也可以手动输入模型名称）：
 
@@ -43,4 +43,4 @@ icon: gear-complex-code
 
 支持配置多个模型，可通过右上角模型下拉框切换模型：
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

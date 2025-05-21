@@ -10,9 +10,11 @@ icon: desktop-arrow-down
 
 为了解决各种本地部署的环境问题，可以直接用客户端启动，支持以下平台：
 
-<figure><img src="https://rncg5jvpme.feishu.cn/space/api/box/stream/download/asynccode/?code=NmVkMTkyZjk3ZWU1MzA4ODc0YTI3ZDQyODhiOTNlYzVfTHd2c2hoYzNabTNJWlcwM1NzOWxncFk1SDlUMHV2NVNfVG9rZW46V01DbWI2NG54b2lVTEN4WHZGZmNMZUpUbnBjXzE3NDcxMzQ3MjA6MTc0NzEzODMyMF9WNA" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 可以直接到 [https://github.com/ConardLi/easy-dataset/releases](https://github.com/ConardLi/easy-dataset/releases) 下载适合自己系统的安装包：
+
+如果遇到 Github 下载较慢，可以使用网盘下载：[https://pan.quark.cn/s/ef8d0ef3785a](https://pan.quark.cn/s/ef8d0ef3785a)&#x20;
 
 <figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
