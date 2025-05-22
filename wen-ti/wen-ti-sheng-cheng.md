@@ -45,7 +45,7 @@ icon: comments-question-check
 <figure><img src="../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-在实际问答任务中，用户的问题并不总是会携带 ？消除一定比低的 ？ 有助于提升微调效果
+在实际问答任务中，用户的问题并不总是会携带 ？消除一定比例的 ？ 有助于提升微调效果
 {% endhint %}
 
 可以控制批量任务中的最大并发数量，（默认最大并发 5 个任务）。
