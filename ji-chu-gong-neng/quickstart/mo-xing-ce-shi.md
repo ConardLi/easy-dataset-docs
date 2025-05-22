@@ -5,7 +5,7 @@ icon: message-bot
 # 模型测试
 
 {% hint style="info" %}
-次模块用于测试模型配置的准确性，选择模型后，如果这里能够输出成功，则配置正常。
+此模块用于测试模型配置的准确性，选择模型后，如果这里能够输出成功，则配置正常。
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
