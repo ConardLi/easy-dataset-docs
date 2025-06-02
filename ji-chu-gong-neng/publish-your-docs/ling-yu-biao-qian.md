@@ -8,7 +8,7 @@ icon: hashtag
 文本分块完成后，平台会调用大模型自动基于文献数据建立领域标签树。
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 查看原始目录
 

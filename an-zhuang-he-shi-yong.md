@@ -10,13 +10,13 @@ icon: desktop-arrow-down
 
 为了解决各种本地部署的环境问题，可以直接用客户端启动，支持以下平台：
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 可以直接到 [https://github.com/ConardLi/easy-dataset/releases](https://github.com/ConardLi/easy-dataset/releases) 下载适合自己系统的安装包：
 
 如果遇到 Github 下载较慢，可以使用网盘下载：[https://pan.quark.cn/s/ef8d0ef3785a](https://pan.quark.cn/s/ef8d0ef3785a)&#x20;
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

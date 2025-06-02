@@ -10,7 +10,7 @@ icon: pen-to-square
 
 在 Easy Dataset 中，通过 「设置 - 任务设置 - 分块设置」 可自定义设置文献处理时的不同分块策略。
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 为什么要做分块？
 
@@ -29,7 +29,7 @@ icon: pen-to-square
 * **基于词元分割**：按照词元数量来分割文本，在和语言模型配合使用时非常实用。
 * **基于字符分割**：依据字符数量来分割文本，这种方式在不同类型的文本中都能保持较好的一致性。
 
-<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 选择固定长度分块时，可配置：
 
@@ -37,7 +37,7 @@ icon: pen-to-square
 2. **chunkSize: 1000：**&#x5B9A;义每个分割块的最大字符长度上限。当文本被分隔符拆分后，若某个块的字符数超过此值，则会被进一步细分为更小的块，确保所有块均不超过指定大小。例如，一个包含3000字符的段落会被拆分为至少3个块（每个≤1000字符）。此参数直接影响后续处理的粒度：较小的值会生成更多、更精细的块，适合需要精确上下文的场景；较大的值则减少块数量，保留更完整的语义单元。
 3. **chunkOverlap: 200：**&#x63A7;制相邻分割块之间的重叠字符数。在每个块的末尾，会保留指定数量的字符作为与下一个块的重叠区域。例如，当 chunkOverlap: 200 时，前一个块的最后200个字符会重复出现在下一个块的开头。这种设计确保语义连续性，避免关键信息因分割被截断，尤其在依赖上下文的任务（如检索、问答）中至关重要。重叠区域作为过渡缓冲区，帮助模型在处理单个块时仍能获取相邻内容的上下文信息。
 
-<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 如果文档相对简单，没有明显的结构，建议采用此方案。
@@ -49,7 +49,7 @@ icon: pen-to-square
 
 文本结构（递归）分块同样支持配置最大分块大小、重叠字符数，另外支持配置多个自定义分隔符：
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 如果文献具备比较复杂的结构，需要设定多个不同的分隔符，建议采用此方案。
@@ -64,7 +64,7 @@ icon: pen-to-square
 * 对已识别到的章节字数进行计数，在恰好位于 > 最小分割长度 同时 < 最大分割长度的前提下进行分段；
 * 当遇到超长段落（超出最大分割长度）的时候，在执行递归分段算法，确保语义的完整性。
 
-<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 如果 Markdown 文件具有良好的结构划分，使用此方案可以获得最佳分块效果。
@@ -74,17 +74,17 @@ icon: pen-to-square
 
 当分块的目标中含有大量代码时，传统的分割方式都不适用，可能会对代码进行阶段，Easy Dataset 也提供了基于智能代码语意理解能力的分割方式，可以选择目标语言进行分块：
 
-<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 可视化自定义分块
 
 当以上分块策略均不能满足你的需求时，可选择使用可视化自定义分块功能，首先找到要分块的文献，点击查看详情：
 
-<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 打开文件预览视图后，点击右上角开启自定义分块模式：
 
-<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 在需要分块的位置选中文本：
 

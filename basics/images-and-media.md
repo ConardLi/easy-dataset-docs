@@ -36,11 +36,11 @@ icon: tent-arrow-left-right
 
 DeepSeek 推出的系列开源蒸馏模型：
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 李飞飞团队的论文 《s1：Simple test- time scaling》 中提到：仅花费 50 美元，就训练出一个比肩 ChatGPT o1 和 DeepSeek R1 的模型，基于通义的开源模型 Qwen2.5-32B 进行的微调，而微调所用的数据集，其中一部分蒸馏自 Google Gemini 2.0 Flash Thinking。
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 这个模型的诞生，是先通过知识蒸馏，从 Gemini API 获取推理轨迹和答案，辅助筛选出 1000 个高质量的数据样本。然后，再用这个数据集，对通义 Qwen2.5-32B 进行微调，最终得到性能表现不错的 s1 模型。
 
@@ -73,7 +73,7 @@ DeepSeek 推出的系列开源蒸馏模型：
 
 为了满足这样的要求，我们在特定领域上肯定不能完全随机提取数据集，在 Easy Dataset 中的思路是：
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 先通过顶级主题（默认使用项目名称），构造多级领域标签，从而构造完整的领域树，在基于 “学生模型” 从领域树的叶子结点提取问题，最终使用 “教师模型” 为问题逐个生成答案和思维过程。
 
@@ -89,7 +89,7 @@ DeepSeek 推出的系列开源蒸馏模型：
 在数据蒸馏任务中，将使用项目名称作为默认的顶级蒸馏主题，所以取好项目名称至关重要。
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 然后我们来到数据蒸馏模块，点击生成顶级标签：
 
@@ -105,37 +105,37 @@ DeepSeek 推出的系列开源蒸馏模型：
 
 为了保证子主题生成的相关性，生成多层子主题将传入完整的标签路径：
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 多级领域标签树构建完成后，可以开启从叶子标签上提取问题：
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 我们可以选择生成问题的数量，另外提取问题时也将传入完整领域标签路径：
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 生成完成后，可以对问题进行预览：
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 可以从领域树叶子结点上看到已生成的问题：
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 然后可以在每个问题上点击生成答案：
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 也可以到问题管理模块为已生成的问题批量生产答案（蒸馏出的问题由于未关联文本块，默认展示为 Distilled Content）：
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 自动蒸馏数据集
 
 如果你不需要精细化的控制以上的每一步，可以选择全自动蒸馏数据集：
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 在配置框中，我们可以看到如下选项：
 
@@ -144,11 +144,11 @@ DeepSeek 推出的系列开源蒸馏模型：
 * 每层生成的标签数量（默认为 10 个）
 * 每个子标签生产的问题数量（默认为 10 个）
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 任务开始后，我们可以看到详细的任务进度，包括构建标签、问题、答案的具体进度：
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 此处也会遵循：「项目设置 - 任务设置」 中最设置的大并发数限制。

@@ -31,6 +31,7 @@
 * [文本分块策略](basics/editor.md)
 * [自定义提示词](basics/markdown.md)
 * [蒸馏数据集](basics/images-and-media.md)
+* [MGA 增强数据集](jin-jie-shi-yong/mga-zeng-qiang-shu-ju-ji.md)
 
 ## 博客
 

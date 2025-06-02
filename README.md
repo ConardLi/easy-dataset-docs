@@ -52,7 +52,7 @@ layout:
 
 Easy DataSet 以 **项目制** 为核心单元，贯穿 「文献处理-问题生成-答案构建-标签管理-数据导出」 全链路：
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 核心模块
 
