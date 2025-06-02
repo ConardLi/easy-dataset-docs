@@ -8,6 +8,47 @@ icon: up
 同步：[https://github.com/ConardLi/easy-dataset/releases/](https://github.com/ConardLi/easy-dataset/releases/)
 {% endhint %}
 
+### [\[1.3.6\] 2025-06-02](https://github.com/ConardLi/easy-dataset/releases/tag/1.3.6)
+
+🔧 修复
+
+1. 选择模型后刷新列表跨域问题 → 修复模型列表刷新时的跨域请求错误，确保不同域下模型数据正常加载。
+2. 上传 DOCX 文件处理超时 → 优化文件解析线程池配置，解决大文件处理时的超时异常。
+3. 删除文献时原始目录删除失败 → 修正文件系统操作逻辑，确保文献删除时关联的原始目录同步清理。
+
+⚡ 优化
+
+1. Docker 打包脚本 → 优化镜像构建流程，减少冗余依赖，提升打包效率。
+2. 数据蒸馏任务问题生成 → 问题生成时不再包含标签序号，适配无结构化格式需求。
+3. 数据集详情 Token 展示 → 在数据集详情页新增 Token 数量统计，直观显示文本长度（支持模型输入限制参考）。
+
+✨ 新功能
+
+1. GA（载体、受众）对的数据集增强\
+   引入 “载体（Generator）- 受众（Audience）” 配对机制，根据数据应用场景生成针对性内容。\
+   文档：[https://docs.easy-dataset.com/jin-jie-shi-yong/mga-zeng-qiang-shu-ju-ji](https://docs.easy-dataset.com/jin-jie-shi-yong/mga-zeng-qiang-shu-ju-ji)
+
+### &#x20;[\[1.3.5\] 2025-05-21](https://github.com/ConardLi/easy-dataset/releases/tag/1.3.5)
+
+**🔧 修复**
+
+1. **数据集确认/保存失败**\
+   → 修复因权限校验异常或网络波动导致的数据集保存失败问题，提升操作稳定性。
+2. **修改文本块后筛选条件失效**\
+   → 解决文本块内容更新后，筛选条件（如标签、状态）未同步刷新的问题。
+3. **硅基流动默认 API 错误**\
+   → 修正默认配置中硅基流动 API 地址及认证参数，确保模型调用正常。
+4. **导出自定义格式数据集丢失标签**\
+   → 恢复自定义格式导出时标签字段的正常提取，支持保留完整元数据。
+
+**⚡ 优化**
+
+1. **Windows 安装路径自定义**\
+   → 安装程序新增路径选择功能，默认不再强制安装至 C 盘，支持用户指定安装目录。
+2. **Alpaca 数据集导出配置优化**
+   * **字段选择**：支持切换问题使用 `instruction` 或 `input` 字段，适配不同模型训练需求。
+   * **自定义指令**：允许手动输入或修改 instruction 内容，提升数据生成灵活性。
+
 ### [\[1.3.4\] 2025-05-20](https://github.com/ConardLi/easy-dataset/releases/tag/1.3.4)&#x20;
 
 **🔧 修复**
