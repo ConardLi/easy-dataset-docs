@@ -4,6 +4,14 @@ icon: newspaper
 
 # 社区教程
 
+### LLaMA Factory 微调教程：如何构建高质量数据集？
+
+{% embed url="https://www.youtube.com/watch?ab_channel=code%E7%A7%98%E5%AF%86%E8%8A%B1%E5%9B%AD&t=2s&v=wTW0NccRXtI" %}
+
+### Easy Dataset 近期重点更新解读
+
+{% embed url="https://www.youtube.com/watch?ab_channel=code%E7%A7%98%E5%AF%86%E8%8A%B1%E5%9B%AD&t=9s&v=IVulnXX3SvY" %}
+
 ### 想微调特定领域的大模型，数据集要怎么搞？
 
 {% embed url="https://www.youtube.com/watch?v=C7euxRVw3JQ" %}
