@@ -25,7 +25,7 @@ icon: user-group
 
 “`Massive Genre-Audience`”（大规模类型-受众）是论文中提出的 `MGA（Massive Genre-Audience Reformulation）` 方法的核心概念，其含义可从以下两方面具体理解：
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### “Massive”的含义
 
@@ -101,11 +101,11 @@ MGA 的有效性源于对 LLM 学习机制的三点优化：
 
 我们正常创建一个用于测试 MGA 的新项目：
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 配置好模型后，在文献处理模型上传一些文献：
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 默认情况下，直接生成问题和数据集不会采用 MGA 增强方案。
 

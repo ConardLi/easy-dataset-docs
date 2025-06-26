@@ -22,7 +22,7 @@ icon: book
 
 由于 PDF 格式相对特殊，平台针对不同场景支持了四种不同的 PDF 处理方式，当上传的文献中含有 PDF 格式的文献时，会触发弹框：
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 基础解析
 

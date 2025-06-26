@@ -4,6 +4,28 @@ icon: question
 
 # 常见问题
 
+### Q：Windows 客户端打开报错
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+安装应用时选择仅为自己安装，不要选择为所有用户安装。
+
+***
+
+### Q：Windows 客户端启动白屏
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+先检查是不是 1717 端口被占用，如果没有被占用，重启电脑再打开试试。
+
+***
+
+### Q：Docker 环境连接本地模型报错
+
+使用 Docker 环境时，如果需要调用本地模型，将 localhost 替换为：[host.docker.internal](http://host.docker.internal:11434) ，如 Ollama 的 API 配置应该为：[http://host.docker.internal:11434](http://host.docker.internal:11434)
+
+***
+
 ### Q：升级至 1.3.x 版本后历史数据丢失
 
 同时打开历史数据目录（**Open Data Directory（History）**）、当前数据目录（**Open Data Directory**）
