@@ -50,27 +50,70 @@ icon: desktop-arrow-down
 
 ***
 
-### Docker启动（适合私有部署）
-
-如果你想自行构建镜像，在云服务或者内网环境私有部署，可以使用项目根目录中的 `Dockerfile`：
+### Docker 启动 - 使用官方 Docker 镜像（适合私有部署）
 
 1. 克隆仓库：
 
 ```bash
-   git clone https://github.com/ConardLi/easy-dataset.git
-   cd easy-dataset
+git clone https://github.com/ConardLi/easy-dataset.git
+cd easy-dataset
+```
+
+2. 更改 `docker-compose.yml` 文件：
+
+```yml
+services:
+  easy-dataset:
+    image: ghcr.io/conardli/easy-dataset
+    container_name: easy-dataset
+    ports:
+      - '1717:1717'
+    volumes:
+      - ${LOCAL_DB_PATH}:/app/local-db
+      - ${LOCAL_PRISMA_PATH}:/app/prisma
+    restart: unless-stopped
+```
+
+> **注意：** 请将 `{YOUR_LOCAL_DB_PATH}`、`{LOCAL_PRISMA_PATH}` 替换为你希望存储本地数据库的实际路径，建议直接使用当前代码仓库目录下的 `local-db` 和 `prisma` 文件夹，这样可以和 NPM 启动时的数据库路径保持一致。
+
+3. 使用 docker-compose 启动
+
+```bash
+docker-compose up -d
+```
+
+4. 打开浏览器并访问 `http://localhost:1717`
+
+***
+
+### Docker 启动 - 手动打包（适合私有部署）
+
+如果你想自行构建镜像，可以使用项目根目录中的 Dockerfile：
+
+1. 克隆仓库：
+
+```bash
+git clone https://github.com/ConardLi/easy-dataset.git
+cd easy-dataset
 ```
 
 2. 构建 Docker 镜像：
 
 ```bash
-   docker build -t easy-dataset .
+docker build -t easy-dataset .
 ```
 
 3. 运行容器：
 
 ```bash
-   docker run -d -p 1717:1717 -v {YOUR_LOCAL_DB_PATH}:/app/local-db --name easy-dataset easy-dataset
+docker run -d \
+  -p 1717:1717 \
+  -v {YOUR_LOCAL_DB_PATH}:/app/local-db \
+  -v {LOCAL_PRISMA_PATH}:/app/prisma \
+  --name easy-dataset \
+  easy-dataset
 ```
 
-> **注意：** 请将 `{YOUR_LOCAL_DB_PATH}` 替换为你希望存储本地数据库的实际路径。
+> **注意：** 请将 `{YOUR_LOCAL_DB_PATH}`、`{LOCAL_PRISMA_PATH}` 替换为你希望存储本地数据库的实际路径，建议直接使用当前代码仓库目录下的 `local-db` 和 `prisma` 文件夹，这样可以和 NPM 启动时的数据库路径保持一致。
+
+4. 打开浏览器，访问 `http://localhost:1717`
