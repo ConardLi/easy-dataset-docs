@@ -20,7 +20,7 @@ icon: book
 
 ### PDF 处理
 
-由于 PDF 格式相对特殊，平台针对不同场景支持了四种不同的 PDF 处理方式，当上传的文献中含有 PDF 格式的文献时，会触发弹框：
+由于 PDF 格式相对特殊，平台针对不同场景支持了五种不同的 PDF 处理方式，当上传的文献中含有 PDF 格式的文献时，会触发弹框：
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -39,6 +39,18 @@ icon: book
 跳转至 MinerU 平台：[https://mineru.net/OpenSourceTools/Extractor](https://mineru.net/OpenSourceTools/Extractor) ，用户可在此平台解析 PDF，并下载 Markdwon 文件，再回平台重新上传。
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### MinerU 私有化部署解析
+首先根据 MinerU 官方文档:[https://opendatalab.github.io/MinerU/zh/quick_start/](https://opendatalab.github.io/MinerU/zh/quick_start/) 在本地部署MinerU。
+
+本地部署成功后使用命令 `mineru-api --host 0.0.0.0 --port 8000` 启动 MinerU 的Web服务。
+
+通过 「设置 - 任务设置」 配置 MinerU Local URL，调用本地 MinerU 进行解析，可深度解析含公式、图表的复杂 PDF 文件，适用于学术论文、技术报告等场景，文件越复杂处理速度越慢。
+
+> 因为官方API接口的原因，这种方式无法实时展示处理进度。若想查看文件处理进度请在 MinerU 运行终端查看。
+
+<img width="2648" height="2032" alt="image" src="https://github.com/user-attachments/assets/cfece487-bfa8-4f25-9223-77220c90a420" />
+
 
 #### 自定义视觉模型解析
 
