@@ -69,12 +69,14 @@ services:
     ports:
       - '1717:1717'
     volumes:
-      - ${LOCAL_DB_PATH}:/app/local-db
-      - ${LOCAL_PRISMA_PATH}:/app/prisma
+      - ./local-db:/app/local-db
+      # - ./prisma:/app/prisma 如果需要挂载请先手动初始化数据库文件
     restart: unless-stopped
 ```
 
 > **注意：** 请将 `{YOUR_LOCAL_DB_PATH}`、`{LOCAL_PRISMA_PATH}` 替换为你希望存储本地数据库的实际路径，建议直接使用当前代码仓库目录下的 `local-db` 和 `prisma` 文件夹，这样可以和 NPM 启动时的数据库路径保持一致。
+
+> **注意：** 如果需要挂载数据库文件（PRISMA），需要提前执行 `npm run db:push` 初始化数据库文件。
 
 3. 使用 docker-compose 启动
 
