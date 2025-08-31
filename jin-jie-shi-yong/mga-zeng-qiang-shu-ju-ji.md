@@ -101,7 +101,7 @@ MGA 的有效性源于对 LLM 学习机制的三点优化：
 
 我们正常创建一个用于测试 MGA 的新项目：
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 配置好模型后，在文献处理模型上传一些文献：
 

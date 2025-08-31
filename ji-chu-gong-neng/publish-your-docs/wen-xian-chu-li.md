@@ -41,7 +41,8 @@ icon: book
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### MinerU 私有化部署解析
-首先根据 MinerU 官方文档:[https://opendatalab.github.io/MinerU/zh/quick_start/](https://opendatalab.github.io/MinerU/zh/quick_start/) 在本地部署MinerU。
+
+首先根据 MinerU 官方文档:[https://opendatalab.github.io/MinerU/zh/quick\_start/](https://opendatalab.github.io/MinerU/zh/quick_start/) 在本地部署MinerU。
 
 本地部署成功后使用命令 `mineru-api --host 0.0.0.0 --port 8000` 启动 MinerU 的Web服务。
 
@@ -49,8 +50,7 @@ icon: book
 
 > 因为官方API接口的原因，这种方式无法实时展示处理进度。若想查看文件处理进度请在 MinerU 运行终端查看。
 
-<img width="2648" height="2032" alt="image" src="https://github.com/user-attachments/assets/cfece487-bfa8-4f25-9223-77220c90a420" />
-
+![image](https://github.com/user-attachments/assets/cfece487-bfa8-4f25-9223-77220c90a420)
 
 #### 自定义视觉模型解析
 
@@ -96,10 +96,16 @@ icon: book
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;可预览文献详情（转换为 Markdown），下载文献（Markdown），删除文献：
+可预览文献详情（转换为 Markdown），下载文献（Markdown），删除文献：
 
 <figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 预览文献：
 
 <figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### 数据清洗
+
+你可以对已经生成好的文本块进行数据清洗，此操作将对原始文本块中的无意义信息进行清理，提升后续数据集生成质量。
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

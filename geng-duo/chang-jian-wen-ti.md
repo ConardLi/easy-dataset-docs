@@ -6,7 +6,7 @@ icon: question
 
 ### Q：Windows 客户端打开报错
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 安装应用时选择仅为自己安装，不要选择为所有用户安装。
 
@@ -14,7 +14,7 @@ icon: question
 
 ### Q：Windows 客户端启动白屏
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 先检查是不是 1717 端口被占用，如果没有被占用，重启电脑再打开试试。
 
