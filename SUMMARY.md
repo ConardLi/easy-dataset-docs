@@ -24,6 +24,7 @@
   * [数据集导出](shu-ju-ji/shu-ju-ji-dao-chu.md)
   * [数据集广场](shu-ju-ji/shu-ju-ji-guang-chang.md)
   * [多轮对话数据集](shu-ju-ji/duo-lun-dui-hua-shu-ju-ji.md)
+  * [数据集导入](shu-ju-ji/shu-ju-ji-dao-ru.md)
 * [评估](ping-gu/README.md)
   * [微调效果评估](ping-gu/wei-tiao-xiao-guo-ping-gu.md)
 
