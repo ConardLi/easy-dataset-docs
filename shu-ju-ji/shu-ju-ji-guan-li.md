@@ -51,3 +51,28 @@ icon: table
 {% hint style="warning" %}
 注意：确认数据集不是必备操作，仅用于平台记录已确认的情况，不影响后续导出（**未确认的数据集也能导出**）。
 {% endhint %}
+
+### 数据集标注
+
+为了满足更灵活的数据集标注需求，在数据集详情中，你可以对数据集添加自定义标签、备注以及评分：
+
+![](https://files.mdnice.com/user/6267/d5aaeb76-c9e6-403b-9ac5-ecad9c129e45.jpg)
+
+并且在筛选中可以根据这些条件进行筛选：
+
+![](https://files.mdnice.com/user/6267/495cc75a-c5fe-47a9-96f0-899d70645ef4.png)
+
+### 数据集评估
+
+你可以使用 AI 对已有数据集进行质量评估，可对单条数据集发起评估，以及后台批量评估：
+
+![](https://files.mdnice.com/user/6267/4e4d58b5-fc89-4798-a94c-ffb9c1d43fda.png)
+
+AI 质量评估完成后，将自动对数据集进行打分，以及添加 AI 评估备注：
+
+![](https://files.mdnice.com/user/6267/b2872875-2f4b-4e9b-b945-1e0cadaa1a0c.jpg)
+
+同样的，你可以到 **项目配置 - 提示词配置 - 质量评估** 自由更改自动质量评估的提示词，以满足定制化的评估需求：
+
+![](https://files.mdnice.com/user/6267/65bb9f66-4ab4-4a1d-84c0-311bf2f64be6.png)
+
