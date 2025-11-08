@@ -39,6 +39,8 @@
 
 * [更新日志](bo-ke/geng-xin-ri-zhi.md)
 * [社区教程](bo-ke/she-qu-jiao-cheng.md)
+* [实战案例](bo-ke/shi-zhan-an-li/README.md)
+  * [案例1：生成汽车图片识别数据集](bo-ke/shi-zhan-an-li/an-li-1-sheng-cheng-qi-che-tu-pian-shi-bie-shu-ju-ji.md)
 
 ***
 
