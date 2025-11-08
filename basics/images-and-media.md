@@ -105,11 +105,11 @@ DeepSeek 推出的系列开源蒸馏模型：
 
 为了保证子主题生成的相关性，生成多层子主题将传入完整的标签路径：
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 多级领域标签树构建完成后，可以开启从叶子标签上提取问题：
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 我们可以选择生成问题的数量，另外提取问题时也将传入完整领域标签路径：
 

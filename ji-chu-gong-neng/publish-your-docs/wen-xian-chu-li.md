@@ -108,4 +108,4 @@ icon: book
 
 你可以对已经生成好的文本块进行数据清洗，此操作将对原始文本块中的无意义信息进行清理，提升后续数据集生成质量。
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
