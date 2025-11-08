@@ -38,9 +38,13 @@
 ## 博客
 
 * [更新日志](bo-ke/geng-xin-ri-zhi.md)
-* [社区教程](bo-ke/she-qu-jiao-cheng.md)
 * [实战案例](bo-ke/shi-zhan-an-li/README.md)
   * [案例1：生成汽车图片识别数据集](bo-ke/shi-zhan-an-li/an-li-1-sheng-cheng-qi-che-tu-pian-shi-bie-shu-ju-ji.md)
+  * [案例2：评论情感分类数据集](bo-ke/shi-zhan-an-li/an-li-2-ping-lun-qing-gan-fen-lei-shu-ju-ji.md)
+  * [案例3：物理学多轮对话数据集](bo-ke/shi-zhan-an-li/an-li-3-wu-li-xue-duo-lun-dui-hua-shu-ju-ji.md)
+  * [案例4：AI 智能体安全数据集](bo-ke/shi-zhan-an-li/an-li-4ai-zhi-neng-ti-an-quan-shu-ju-ji.md)
+  * [案例5：从图文 PPT 中提取数据集](bo-ke/shi-zhan-an-li/an-li-5-cong-tu-wen-ppt-zhong-ti-qu-shu-ju-ji.md)
+* [社区教程](bo-ke/she-qu-jiao-cheng.md)
 
 ***
 

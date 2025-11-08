@@ -24,3 +24,6 @@ icon: newspaper
 
 {% embed url="https://buaa-act.feishu.cn/wiki/KY9xwTGs1iqHrRkjXBwcZP9WnL9" %}
 
+### Easy Dataset 1.6.0 更新介绍及数据集实战教程
+
+{% embed url="https://www.youtube.com/watch?v=BZDXu9yGxJg" %}
