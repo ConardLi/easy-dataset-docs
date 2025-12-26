@@ -33,8 +33,7 @@ icon: file-arrow-down
 
 <figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
-点击预览数据集，能够加载到数据集，说明配置成功：\
-
+点击预览数据集，能够加载到数据集，说明配置成功：<br>
 
 <figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 

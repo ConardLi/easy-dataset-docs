@@ -46,4 +46,4 @@
 
 <figure><img src="https://files.mdnice.com/user/6267/8383e439-795a-448f-a02f-7f7d3f450fb1.png" alt=""><figcaption></figcaption></figure>
 
-### &#x20;
+### <br>

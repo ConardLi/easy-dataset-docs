@@ -8,7 +8,9 @@ icon: weixin
 
 欢迎加入 code 秘密花园 AI 交流群，如果群聊过期，可加小助理微信：codemmhy 备注 AI 拉你进群：
 
-<div data-full-width="false"><figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure></div>
+
+
+<figure><img src="../.gitbook/assets/abb3095b43d618f6dea40fda4bd8d6dd.jpg" alt=""><figcaption></figcaption></figure>
 
 ### 问题反馈
 
