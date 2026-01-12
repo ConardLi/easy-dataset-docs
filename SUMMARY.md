@@ -26,7 +26,9 @@
   * [多轮对话数据集](shu-ju-ji/duo-lun-dui-hua-shu-ju-ji.md)
   * [数据集导入](shu-ju-ji/shu-ju-ji-dao-ru.md)
 * [评估](ping-gu/README.md)
-  * [模型评估数据集生成](ping-gu/wei-tiao-xiao-guo-ping-gu.md)
+  * [评估数据集生成](ping-gu/wei-tiao-xiao-guo-ping-gu.md)
+  * [自动评估任务](ping-gu/zi-dong-ping-gu-ren-wu.md)
+  * [人工盲测任务](ping-gu/ren-gong-mang-ce-ren-wu.md)
 
 ## 进阶使用
 
